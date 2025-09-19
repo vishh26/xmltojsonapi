@@ -23,19 +23,16 @@ Mixed content
 
 ##  Live Links
 - GitHub Repository:  https://github.com/vishh26/xmltojsonapi
-- Deployed Backend API:https://xmltojsonapi.onrender.com/api/xmlToJson
+- Deployed Backend API for default file: https://xmltojsonapi.onrender.com/api/xmlToJson
+- Deployed Backend API for custom file:  https://xmltojsonapi.onrender.com/api/xmlToJson/upload
 
 ---
 
 ## Project Structure
-backend/
 index.js # Express server
 parser.js # XML → JSON parser logic
 test.xml # Sample XML input
 output.json # Expected JSON output
-
-frontend/
-src/App.jsx # React UI
 
 ## ⚡ Getting Started (Local Setup)
 ### 1️⃣ Clone the repo
