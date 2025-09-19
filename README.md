@@ -12,7 +12,7 @@
  
 ### Default file
 
-Open Postman and select GET method.
+Open Postman and select POST method.
 
 Enter the URL: https://xmltojsonapi.onrender.com/api/xmlToJson
 
