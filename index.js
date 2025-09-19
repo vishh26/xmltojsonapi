@@ -5,7 +5,7 @@ const cors = require("cors");
 const fs = require("fs");
 const path = require("path");
 const multer = require("multer");
-const parser = require("./Parser");
+const parser = require("./parser");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
