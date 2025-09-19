@@ -1,4 +1,31 @@
 -- REST API that converts XML files to JSON without using any libraries
+
+
+##  Live Links
+- GitHub Repository:  https://github.com/vishh26/xmltojsonapi
+- Deployed Backend API for default file: https://xmltojsonapi.onrender.com/api/xmlToJson
+- Deployed Backend API for custom file:  https://xmltojsonapi.onrender.com/api/xmlToJson/upload
+
+---
+
+## How to test API in Postman
+ 
+#for Default file :
+-- GO to postman select Post method add the url : https://xmltojsonapi.onrender.com/api/xmlToJson
+-- Click on  send Button you will get the desired Response
+
+#for 2. Custom file upload
+
+-Open Postman and select POST method.
+
+-Enter the URL: https://xmltojsonapi.onrender.com/api/xmlToJson/upload
+
+-Go to the Body tab → select form-data.
+
+-Add a key named file → Type: xmlFile → Choose the XML file you want to upload.
+
+-Click Send → You will get the desired JSON response converted from your uploaded XML file.
+
 ### Features
 
 Custom XML parser (no third-party XML libs).
@@ -20,14 +47,6 @@ Text content
 Entity references (&amp;, &lt;, etc.)
 
 Mixed content
-
-##  Live Links
-- GitHub Repository:  https://github.com/vishh26/xmltojsonapi
-- Deployed Backend API for default file: https://xmltojsonapi.onrender.com/api/xmlToJson
-- Deployed Backend API for custom file:  https://xmltojsonapi.onrender.com/api/xmlToJson/upload
-
----
-
 ## Project Structure
 index.js # Express server
 parser.js # XML → JSON parser logic
@@ -39,24 +58,30 @@ output.json # Expected JSON output
 ```bash
 git clone 
 
-2️⃣ Backend Setup
+# Backend Setup
 cd Backend
 npm install
 
 npm start      # starts server on http://localhost:3000
 
-POST http://localhost:3000/api/xmlToJson
+
+#1)for Default file
+POST :http://localhost:3000/api/xmlToJson
+
 Input: test.xml (local file inside backend folder)
+
 Output: Returns JSON + writes output.json
 
+Select POST method.
 
-🛠 API Documentation
-###1 endpoint
-POST https://xmltojsonapi.onrender.com/api/xmlToJson
-Description: Parses the test.xml file from the project root and returns JSON.
+2) Custom file upload
 
-### 2nd endpoint
-POST https://xmltojsonapi.onrender.com/api/xmlToJson/upload
-Description: Upload an XML file and convert it to JSON.
-Request `Body :multipart/form-data with key: xmlFile → XML file   
+-POST: http://localhost:3000/api/xmlToJson/upload
+
+-Body → form-data → key = xmlFile, type = File → select your XML file
+
+-Click Send → Get JSON response
+
+
+
 
