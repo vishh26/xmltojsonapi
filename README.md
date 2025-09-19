@@ -10,23 +10,25 @@
 
 ## How to test API in Postman
  
- 1)Default file :
--- GO to postman select Post method add the following Url
- -- URL  : https://xmltojsonapi.onrender.com/api/xmlToJson
--- Click on  send Button you will get the desired Response
+1. Default file
 
-2)Custom file upload
+Open Postman and select GET method.
 
--Open Postman and select POST method.
+Enter the URL: https://xmltojsonapi.onrender.com/api/xmlToJson
 
--Enter the URL: https://xmltojsonapi.onrender.com/api/xmlToJson/upload
+Click Send → You will get the JSON response from the default XML file.
 
--Go to the Body tab → select form-data.
+2. Custom file upload
 
--Add a key named file → Type: xmlFile → Choose the XML file you want to upload.
+Open Postman and select POST method.
 
--Click Send → You will get the desired JSON response converted from your uploaded XML file.
+Enter the URL: https://xmltojsonapi.onrender.com/api/xmlToJson/upload
 
+Go to the Body tab → select form-data.
+
+Add a key named xmlFile → Type: File → Choose the XML file you want to upload.
+
+Click Send → You will get the JSON response converted from your uploaded XML file.
 ### Features
 
 Custom XML parser (no third-party XML libs).
