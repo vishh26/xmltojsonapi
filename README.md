@@ -10,7 +10,7 @@
 
 ## How to test API in Postman
  
-# Default file
+### Default file
 
 Open Postman and select GET method.
 
@@ -18,7 +18,7 @@ Enter the URL: https://xmltojsonapi.onrender.com/api/xmlToJson
 
 Click Send → You will get the JSON response from the default XML file.
 
-# Custom file upload
+### Custom file upload
 
 Open Postman and select POST method.
 
